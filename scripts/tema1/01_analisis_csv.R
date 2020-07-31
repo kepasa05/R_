@@ -1,5 +1,5 @@
 # carga fichero con cabecera y separador ,
-auto <- read.csv("../data/auto-mpg.csv", header = TRUE, sep = ",")
+auto <- read.csv("../data/auto-mpg.csv", header = TRUE, sep = ",", na.strings = )
 names(auto)
 
 # Para fichero que use separador ; y decimal ,
