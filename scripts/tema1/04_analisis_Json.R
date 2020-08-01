@@ -8,5 +8,14 @@ data1 <- fromJSON("../data/students.json")
 data2 <- fromJSON("../data/student-courses.json")
 
 ## Json desde ur (necesario paquete curl)
-url <- "https://datos.gob.es/apidata/catalog/dataset/l01280148-educacion-primaria-centros-publicos-alumnos-2010-2017.json"
+url <- "http://www.floatrates.com/daily/usd.json"
 currencies <- fromJSON(url)
+
+## Acceso a los datos especificos del json mediante $
+currencies$eur$name
+data1$Name
+
+## Acceso fila 1 a 5 y todas columnas
+data1[1:5,]
+## Mostrar 2 columnas, la 2 y la5
+data2[c(2,5)]
